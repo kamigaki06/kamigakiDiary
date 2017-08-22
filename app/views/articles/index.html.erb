@@ -1,0 +1,8 @@
+<h1>投稿一覧</h1>
+<% @articles.each do |article| %>
+	<div><%= link_to article.title, "/articles/#{article.id}" %></div>
+
+<!--	<div><%= article.body %></div>
+	#<div><%= article.author %></div>
+-->
+<% end %>
